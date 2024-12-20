@@ -18,7 +18,7 @@
 
 } 
 .logo-img{
-  width: 190px;
+  width: 170px;
  
 }
 .logo-size{
@@ -42,7 +42,7 @@
   background-color: white;
   width: 400px;
   font-family: sans-serif;
-  padding: 60px;
+  padding: 50px;
   border-radius: 15px;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 10px rgb(112, 110, 110);
@@ -74,7 +74,7 @@
 
 
 .margin-top {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .margin-bottom {
   margin-bottom: 15px;
