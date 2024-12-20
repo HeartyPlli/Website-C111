@@ -325,3 +325,14 @@ position: absolute;
   margin: 20px auto;
   max-width: 1200px; 
 }
+
+
+@media (max-width: 768px) {
+    .text-section {
+        font-size: 20px;
+    }
+    .featpic {
+        width: 100%;
+        height: auto;
+    }
+}
