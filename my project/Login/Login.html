@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="..\CSS\style_login.css" />
+    <title >ArtheHeart Login Page</title>
+</head>
+
+<body>
+  
+    <div class="wrapper">
+      <div  class="logo-size">
+      <center>
+        <img src="..\Image\Logo.png" class="logo-img" />
+        <br>
+        <span class="arthe gradient">ArtheHeart</span>
+      </center>
+    
+        <div class="login-box" id="background">
+       
+          <h3 class="text-center">Login</h3>
+          <label for="username" class="text-small ">Username </label>
+          
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="textfields margin-bottom "
+          />
+
+          <p class="text-red text-small margin-bottom " id="wrongUsername">Wrong Username</p>
+ 
+        <label for="password" class="text-small ">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="textfields "
+        />
+
+        <p class="text-red text-small " id="wrongPassword">Wrong Password</p>
+
+        <input
+          type="checkbox"
+          name="checkbox"
+          id="checkbox"
+          class="margin-top"
+        />
+
+        <span class="text-small">Show Password</span>
+        <br />
+
+        <center>
+          <button class="btn" id="login">Proceed</button>
+        </center>
+      </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+<script>
+    document.getElementById('checkbox').addEventListener('change', function () {
+    const input = document.getElementById('password')
+    input.type = this.checked ? 'text' : 'password'
+ 
+    const background = document.getElementById('background')
+background.style.backgroundColor = this.checked ? 'white' : 'white'
+  })
+ 
+  document.getElementById('login').addEventListener('click', function () {
+    const username = document.getElementById('username').value
+    const password = document.getElementById('password').value
+ 
+    const inputUsername = document.getElementById('username')
+    const inputPassword = document.getElementById('password')
+    const wrongUsername = document.getElementById('wrongUsername')
+    const wrongPassword = document.getElementById('wrongPassword')
+ 
+    if (username !== 'plaveHC') {
+inputUsername.style.borderColor = 'red'
+wrongUsername.style.display = 'block'
+
+    } else {
+inputUsername.style.borderColor = 'black'
+wrongUsername.style.display = 'none'
+    }
+ 
+    if (password !== 'yatazplli') {
+inputPassword.style.borderColor = 'red'
+wrongPassword.style.display = 'block'
+    } else {
+inputPassword.style.borderColor = 'black'
+wrongPassword.style.display = 'none'
+    }
+ 
+    if (username === 'plaveHC' && password === 'yatazplli') {
+      window.location='../Html/Home_Page.html'
+
+    }
+  })
+</script>
+    
